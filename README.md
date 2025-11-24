@@ -2,8 +2,10 @@
 
 This is a fully responsive and animated Personal Portfolio Website designed to showcase my skills, education, certifications, internship experience. The website is built using modern & clean UI components, providing elegant navigation, interactive animations, and an engaging user experience.
 
-<!-- ## 🚀 Live Preview
-👉 *Add your hosted link here* (e.g., GitHub Pages, Netlify, Vercel) -->
+
+## 🚀 Live Preview
+https://karthikeyantsk.github.io/Portfolio_karthik/
+
 
 ## 📁 Project Overview
 
@@ -65,3 +67,4 @@ Built to help recruiters & companies quickly understand my technical expertise a
 ⭐ Show your support by starring the repository!
 
 © 2025 Karthikeyan T S. All rights reserved.
+
