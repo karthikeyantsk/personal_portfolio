@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeyan - Certifications</title>
+    <!-- <link rel=icon href="/image/me.jpg"> -->
+    <link rel="icon" href="image/Portfolio_page.jpg">
+    <script src="https://kit.fontawesome.com/0a682b9dd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style-merge.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #060606;
+            color: #ffffff;
+            font-family: 'Alice';
+            line-height: 1.6;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .back-icon {
+            position: absolute;
+            left: 0;
+            color: white;
+            font-size: 32px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .back-icon:hover {
+            color: #e60042;
+        }
+
+        .back-icon i {
+            vertical-align: middle;
+        }
+
+        .certificate-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .certificate-icon h2 {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .certificate-icon img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .certificate {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certificate img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff004f;
+        }
+
+        .certificate:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+        }
+
+        .certificate .details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .certificate .details h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 100;
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .back-icon {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            .certificate:hover {
+                transform: translateY(0px);
+            }
+
+            .certificate-icon img {
+                height: 30px;
+                width: 30px;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .certificates {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .certificate img {
+                max-height: 150px;
+            }
+
+            .certificate .details {
+                padding: 4px;
+            }
+
+            .certificate .details h3 {
+                font-size: 14px;
+
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .back-icon {
+                font-size: 20px;
+            }
+
+            .certificate-icon img {
+                height: 25px;
+                width: 25px;
+            }
+
+            .section h2 {
+                font-size: 1.2rem;
+            }
+
+            .certificates {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .certificate:hover {
+                transform: translateY(0px);
+            }
+
+            .certificate .details {
+                padding: 2px;
+            }
+
+            .certificate .details h3 {
+                font-size: 12px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html#gallery" class="back-icon">
+                <i class="fa-solid fa-reply-all"></i>
+            </a>
+            <h1>My Certificates</h1>
+        </div>
+        
+        <div class="section">
+
+            <div class="certificate-icon">
+                <img src="./Icon/Internship.png" alt="Internship Icon">
+                <h2>Internship</h2>
+            </div>
+            <div class="certificates">
+                <div class="certificate ">
+                    <img src="./certificates_2/Amizth techno certificate intern.jpg"
+                        alt="Certificate 10">
+                    <div class="details">
+                        <h3>Web Development Intern</h3>
+                    </div>
+                </div>
+                <!-- <div class="certificate">
+                    <img src="./certificates/Internship_2.png" alt="Certificate">
+                    <div class="details">
+                        <h3>Java Web Development Intern</h3>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="section">
+
+            <div class="certificate-icon">
+                <img src="./Icon/Certificate.png" alt="Technical Certifications Icon">
+                <h2>Other Technical Certifications</h2>
+            </div>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="./certificates_2/AI Foundation Karthikeyan TS_page-0001.jpg" alt="Certificate">
+                    <div class="details">
+                        <h3>AI Foundation Certification - Infosys</h3>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="./certificates_2/Data_Anlaytics_Simplileran_page-0001.jpg" alt="Certificate">
+                    <div class="details">
+                        <h3>Data Analytics Certification</h3>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="./certificates_2/TCS_ion_Young_page-0001.jpg" alt="Certificate">
+                    <div class="details">
+                        <h3>TCS iON Career Edge - Young Professional</h3>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <img src="./certificates_2/AI_NPTEL _2_page-0001.jpg" alt="Certificate">
+                    <div class="details">
+                        <h3>Responsible and Safe AI Systems - NPTEL</h3>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="./certificates_2/Java Infy_page-0001.jpg" alt="Certificate">
+                    <div class="details">
+                        <h3>Java - Infosys</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

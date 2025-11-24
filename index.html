@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeyan Digital Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-merge.css">
+    <link rel="icon" href="image/Portfolio_page.jpg">
+    <!-- Removed broken Lightbox & EmailJS includes -->
+    <script src="https://kit.fontawesome.com/0a682b9dd5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <div class="social-icons-container">
+        <div class="expand-icon"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="close-icon"><i class="fa-solid fa-circle-xmark"></i></div>
+        <ul class="social-icons-side">
+
+            <li style="background-color: rgba(0, 0, 255, 0.7);">
+                <a href="https://www.linkedin.com/in/karthikeyantsk/" target="_blank" class="fa-brands fa-linkedin"
+                    aria-label="LinkedIn"></a>
+            </li>
+            <li style="background-color: rgba(59, 59, 59, 0.7);">
+                <a href="https://github.com/karthikeyantsk" target="_blank" class="fa-brands fa-github"
+                    aria-label="GitHub"></a>
+            </li>
+            <li style="background-color: rgba(255, 0, 0, 0.7);">
+                <a href="mailto:karthiksuresh309@gmail.com" class="fas fa-envelope" aria-label="Contact"></a>
+            </li>
+        </ul>   
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo neon-cursive">Kindly kn</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Welcome</a></li>
+                    <li><a href="#about">Who I am</a></li>
+                    <li><a href="#tools-ides">Technical Skill Set</a></li>
+                    <li><a href="#portfolio">Projects Hub</a></li>
+                    <li><a href="#gallery">Certifications</a></li>
+                    <li><a href="#contact">Connect</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>I am <span class="name-text"><span class="first-k">K</span>arthikeyan T S</span></h1>
+                <p>Bachelor of Information Technology | Transforming data into meaningful insights to support smart
+                    decisions | Turning
+                    real-world problems into reliable software solutions through code. </p>
+                <a href="https://www.linkedin.com/in/karthikeyantsk/" class="f-btn">Let's Connect Professionally<i
+                        class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img style="background-color:whitesmoke;" src="image/Profile_3.jpg" alt="NotFound">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Who I am</h1>
+                    <p style="text-align: justify;">I aspire to join an organization where I can utilize my strengths
+                        and help achieve its goals. Guided by a passion for
+                        learning and a desire for excellence, I am committed to improving my capabilities and
+                        contributing positively to the
+                        organization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Insight Explorer</span><br>Discovering meaningful patterns in data to drive
+                                strategic decisions.</li>
+                            <li><span>Solution Builder</span><br>Developing modern software experiences that solve
+                                real-world problems.</li>
+                            <li><span>Design Thinker</span><br>Sculpting clean, user-friendly, and impactful visual
+                                journeys.</li>
+                            <li><span>Strategic Analyst</span><br>Breaking down complex issues and crafting innovative,
+                                data-backed solutions.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Internship - Amizth Techno Solutions</li>
+                        </ul>
+                        <p>Developed and maintained an e-commerce web app using Java
+                            Spring Boot, HTML, CSS, and JavaScript. Collaborated on API integration
+                            and database management, improving backend efficiency by 20%, and
+                            participated in Agile sprints.</p>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 – 2026</span><br>B.Tech. IT from Velammal College of Engineering and
+                                Technology, Madurai <br> CGPA - 8.36</li>
+                            <li><span>2021 – 2022</span><br>HSC from St.Mary's Higher Secondary School, Madurai <br>
+                                Percentage - 92.5%</li>
+                            <li><span>2019 – 2020</span><br>SSLC from Setupati Higher Secondary School, Madurai <br>
+                                Percentage - 87.2%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools & IDEs Section -->
+    <div id="tools-ides">
+        <div class="container">
+            <h1 class="sub-title">Technical Skill Set</h1>
+            <div class="tools-list">
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/mysql.png" alt="MySQL" />
+                    <h2>MySQL</h2>
+                    <p>Core SQL database for building ETL pipelines, managing structured data, and performing business
+                        analytics.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" />
+                    <h2>Java</h2>
+                    <p>Experienced in developing software using OOP concepts and strong problem-solving strategies to
+                        deliver optimized
+                        applications.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" />
+                    <h2>Python</h2>
+                    <p>Powerful language for data visualization, statistical analysis, and machine learning with rich
+                        libraries like Pandas,
+                        Matplotlib, and Scikit-Learn.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="image/Microsoft-Power-BI-Logo.png" alt="power bi" />
+                    <h2>Power BI</h2>
+                    <p>Converts raw data into clear visual stories and analytical insights through interactive reports
+                        and dashboards.
+                    </p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" />
+                    <h2>GitHub</h2>
+                    <p>A Git-based platform for managing code, tracking changes, and collaborating on software
+                        projects.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" />
+                    <h2>HTML</h2>
+                    <p>The web begins with HTML, shaping content into meaning,
+                        forming the core structure of every digital experience.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" />
+                    <h2>CSS</h2>
+                    <p>CSS paints the web with style and personality,
+                        making every page look unique and alive.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" />
+                    <h2>JavaScript</h2>
+                    <p>Without JavaScript, the web is silent.With it, every click becomes a story.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" />
+                    <h2>React</h2>
+                    <p>React updates the UI with speed and precision,rendering changes instantly through its virtual
+                        DOM.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Java Spring Frameworks" />
+                    <h2>Java Spring Frameworks</h2>
+                    <p>Spring turns complex Java into simpler modules,speeding up development.</p>
+                </div>
+
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" />
+                    <h2>C</h2>
+                    <p>C teaches logic at its roots,mastering it shapes every other language.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://img.icons8.com/color/48/000000/nodejs.png" />
+                    <h2>Node JS</h2>
+                    <p>Node.js runs JavaScript on the server,powering fast and scalable backend systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects Hub</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Projects/Pizza_Sales_5.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Pizza Sales Analysis DashBoard</h3>
+                        <p>Performed end-to-end pizza sales analysis with SQL and Power BI to
+                            make interactive dashboards where KPIs, month-wise trends, and the
+                            top 5 best/selling products can be compared.</p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Data_prof_2.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Data Professionals Survey</h3>
+                        <p>Processed and analyzed Data Professionals Survey using Power Query
+                            and Power BI, creating an interactive dashboard with insights on roles,
+                            salaries, tools, and industry trends. Highlighted skill preferences, salary
+                            variations, and career satisfaction to support informed decision-making.
+                        </p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Bike_sales_6.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Bike Sales DashBoard</h3>
+                        <p>Developed a dynamic and visually engaging Bike Sales Dashboard in Power BI that analyzes
+                            rider behavior, seasonal
+                            revenue, peak sales days, and overall profitability through interactive charts, KPIs,
+                            slicers, and trend insights to
+                            support data-driven decision making.</p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Covid_data.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Covid Data Exploration</h3>
+                        <p>Interpreted worldwide COVID-19 data in SQL to investigate trends
+                            in cases, fatalities, and vaccinations, computing important health
+                            metrics and drawing country-level conclusions through complex
+                            queries and data joins</p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Automatic_file_3.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Automatic File Sorter</h3>
+                        <p>Developed an Automatic File Sorter in Python that scans directories and intelligently
+                            organizes files into dedicated
+                            folders (CSV, DOCX, PDF, and Images) using os and shutil modules, enabling faster file
+                            management and reducing manual
+                            sorting efforts.</p>
+                        <a href="https://github.com/Ragul-05"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Phishing_website_1.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Phishing Website Detection</h3>
+                        <p>Developed a machine learning model to detect phishing websites by
+                            analyzing URL features such as port numbers, presence of HTTPS, and
+                            domain patterns, using algorithms like Random Forest, SVM, and
+                            Logistic Regression to enhance cybersecurity and protect users from
+                            online attacks.</p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Fake_job_1.jpg" alt="NotFound">
+                    <div class="layer">
+                        <h3>Fake Job Posting Identification</h3>
+                        <p>Developed a machine learning–based Fake Job Posting Detection system using Logistic
+                            Regression, Extra Trees, and
+                            XGBoost, achieving up to 98% accuracy in identifying fraudulent listings and safeguarding
+                            job seekers on recruitment
+                            platforms through robust feature engineering and model evaluation.</p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Projects/Wander_X_1.png" alt="NotFound">
+                    <div class="layer">
+                        <h3>Wander - X</h3>
+                        <p>Built Wander X, an interactive travel recommendation app that suggests destinations,
+                            highlights regional attractions,
+                            and offers smart trip planning using a modern full-stack stack (React, Node.js, MongoDB),
+                            delivering a smooth,
+                            personalized travel experience.</p>
+                        <a href="https://github.com/karthikeyantsk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Section -->
+    <section id="gallery">
+        <br>
+        <div class="container">
+            <div class="grid">
+                <div class="left">
+                    <h1 class="sub-title">Certifications</h1>
+                    <h4 class="gallery-about" style="letter-spacing: 4px; margin: 7px;">Check My Certificates...</h4>
+                    <a href="./certification.html" class="btn" style="display: inline-block;">Certificates</a>
+                </div>
+                <div class="right">
+                    <div class="gallery horizontal-gallery img-fluid">
+                        <a href="./certificates_2/AI Foundation Karthikeyan TS_page-0001.jpg"
+                            data-lightbox="certificates"><img class="work-modals img-fluid potrait"
+                                src="./certificates_2/AI Foundation Karthikeyan TS_page-0001.jpg"></a>
+                        <a href="./certificates_2/Data_Anlaytics_Simplileran_page-0001.jpg"
+                            data-lightbox="certificates"><img class="work-modals img-fluid potrait"
+                                src="./certificates_2/Data_Anlaytics_Simplileran_page-0001.jpg"></a>
+                        <a href="./certificates_2/TCS_ion_Young_page-0001.jpg" data-lightbox="certificates"><img
+                                class="work-modals img-fluid potrait"
+                                src="./certificates_2/TCS_ion_Young_page-0001.jpg"></a>
+                        <a href="./certificates_2/Java Infy_page-0001.jpg" data-lightbox="certificates"><img
+                                class="work-modals img-fluid potrait"
+                                src="./certificates_2/Java Infy_page-0001.jpg"></a>
+                        <a href="./certificates_2/AI_NPTEL _2_page-0001.jpg" data-lightbox="certificates"><img
+                                class="work-modals img-fluid potrait"
+                                src="./certificates_2/AI_NPTEL _2_page-0001.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Connect</h1>
+                    <p><a href="mailto:karthiksuresh309@gmail.com"><i
+                                class="fa-solid fa-paper-plane"></i>karthiksuresh309@gmail.com</a></p>
+                    <p><a href="tel:+916369380997"><i class="fa-solid fa-square-phone"></i>+91-6369380997</a></p>
+                    <div class="social-icons">
+                        <a href="https://github.com/karthikeyantsk" target="_blank"><img
+                                src="https://img.icons8.com/ios-glyphs/100/ffffff/github.png"></a>
+                        <a href="https://www.instagram.com/kindly_kn?igsh=MWZjcnlweWtpZ2xrcg==" target="_blank"><img
+                                src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"></a>
+                        <a href="https://www.linkedin.com/in/karthikeyantsk/" target="_blank"><img
+                                src="https://img.icons8.com/color/100/000000/linkedin.png"></a>
+                    </div>
+                    <a href="./Resume/Karthikeyan_TS_IT_VCET.pdf" class="btn btn2">Explore My Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form id="contact-form" method="POST">
+                        <input type="hidden" name="access_key" value="e6240bb9-184a-4c5f-85bc-fd674d1b8cba">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2" style="margin-left: 20px;">Submit</button>
+                    </form>
+                </div>
+
+                <div id="notification" class="notification" style="display: none;">
+                    <span id="notification-message">Message Sent Successfully!</span>
+                    <button id="close-notification"><i class="fa-regular fa-circle-xmark"
+                            style="color: #ffffff;"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Karthikeyan TS. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/karthikeyantsk/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/karthikeyantsk" target="_blank">GitHub</a> |
+            <a href="mailto:karthiksuresh309@gmail.com">Email</a>
+        </div>
+    </div>
+
+    <div id="scrollToTop">
+        <a href="#header">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+    <div id="feedbackBtn">
+        <a href="rating.html" class="btn-feedback">
+            <i class="fas fa-comment"></i> Share Your Thoughts
+        </a>
+    </div>
+
+    <!-- Your existing JS file (menu, scrollreveal, etc.) -->
+    <script src="script.js"></script>
+
+    <!-- Web3Forms Submit Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contact-form");
+            const notification = document.getElementById("notification");
+            const closeBtn = document.getElementById("close-notification");
+
+            if (form) {
+                form.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(form);
+
+                    try {
+                        const response = await fetch("https://api.web3forms.com/submit", {
+                            method: "POST",
+                            body: formData
+                        });
+
+                        if (response.ok) {
+                            if (notification) {
+                                notification.style.display = "flex";
+                            }
+                            form.reset();
+                        } else {
+                            alert("Failed to send message. Please try again.");
+                        }
+                    } catch (error) {
+                        console.error(error);
+                        alert("Something went wrong. Please check your internet connection and try again.");
+                    }
+                });
+            }
+
+            if (closeBtn && notification) {
+                closeBtn.addEventListener("click", function () {
+                    notification.style.display = "none";
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
